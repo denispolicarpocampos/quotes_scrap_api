@@ -6,6 +6,7 @@ module Api
     class UsersController < Api::V1::ApiController
       before_action :authenticate_user, except: %i[create]
       before_action :set_user, only: %i[show destroy update]
+      load_and_authorize_resource except: %i[create]
 
       def create
         user = User.new(user_params)

@@ -21,6 +21,7 @@ gem 'mongoid', '~> 6.1.0'
 gem 'knock'
 gem 'active_model_serializers'
 gem 'rest-client', '~> 2.0', '>= 2.0.2'
+gem 'cancancan'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
