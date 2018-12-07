@@ -11,4 +11,9 @@ RSpec.describe User, type: :model do
     user_2 = User.new(email: user.email, password: '12345678')
     expect(user_2).to_not be_valid
   end
+
+  it 'email invalid' do
+    user = User.new(email: 'teste', password: '12345678')
+    expect(user).to_not be_valid
+  end
 end

@@ -8,4 +8,5 @@ class User
 
   validates :email, :password, presence: true
   validates_uniqueness_of :email
+  validates :email, format: { with: URI::MailTo::EMAIL_REGEXP }, message: 'Email is not valid'
 end
