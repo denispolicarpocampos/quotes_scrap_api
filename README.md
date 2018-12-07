@@ -11,6 +11,7 @@ Para rodar o projeto:
 - Inicie o serviço do mongodb.
 - Instale as gems com bundle install.
 - Execute o projeto com rails server.
+- Para rodar os testes execute o rspec com o comando 'rspec' no terminal
 
 Documentação da API:
 - https://documenter.getpostman.com/view/4002613/RzfiG82P
