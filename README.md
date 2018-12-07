@@ -14,3 +14,9 @@ Para rodar o projeto:
 
 Documentação da API:
 - https://documenter.getpostman.com/view/4002613/RzfiG82P
+
+Solução:
+- Utilizei JWT para fazer a autenticação da API. O usuário necessita estar logado para utilizar o crawler.
+- Para utilizar o sistema o usuário deve criar sua conta e fazer a autenticação.
+- Através do endpoint /api/v1/quotes/:search_tag são obtidas as quotes da primeira página do site.
+- Caso a quote já tenha sido procurada ela não será salva no banco e ele retonará o resultado armazenado nele.
