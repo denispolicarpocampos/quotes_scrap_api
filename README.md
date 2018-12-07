@@ -20,3 +20,4 @@ Solução:
 - Para utilizar o sistema o usuário deve criar sua conta e fazer a autenticação.
 - Através do endpoint /api/v1/quotes/:search_tag são obtidas as quotes da primeira página do site.
 - Caso a quote já tenha sido procurada ela não será salva no banco e ele retonará o resultado armazenado nele.
+- A API está documentada no link acima com maiores informações de uso do sistema.
