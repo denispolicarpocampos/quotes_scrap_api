@@ -1,24 +1,16 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Dependências: 
+- Ruby 2.5.1
+- Rails 5.2.1
+- Mongodb
 
-Things you may want to cover:
+Para rodar o projeto:
 
-* Ruby version
+- Faça o clone do projeto e entre na pasta do mesmo.
+- Inicie o serviço do mongodb.
+- Instale as gems com bundle install.
+- Execute o projeto com rails server.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Documentação da API:
+- https://documenter.getpostman.com/view/4002613/RzfiG82P

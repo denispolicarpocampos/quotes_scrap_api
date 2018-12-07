@@ -12,7 +12,7 @@ module Api
       end
 
       rescue_from Mongoid::Errors::DocumentNotFound do |msg|
-        render(json: { message: msg }, status: :not_found)
+        render(json: { message: 'Not found' }, status: :not_found)
       end
 
       rescue_from CanCan::AccessDenied do |msg|

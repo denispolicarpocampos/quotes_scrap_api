@@ -6,7 +6,7 @@ class User
   field :password_digest, type: String
   has_secure_password
 
-  validates :email, :password, presence: true
+  validates :email, :password, presence: true, on: :create
   validates_uniqueness_of :email
-  validates :email, format: { with: URI::MailTo::EMAIL_REGEXP }, message: 'Email is not valid'
+  validates_format_of :email, with: /\A[^@\s]+@([^@\s]+\.)+[^@\s]+\z/
 end
