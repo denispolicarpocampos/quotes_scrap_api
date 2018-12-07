@@ -12,11 +12,15 @@ module Api
       end
 
       rescue_from Mongoid::Errors::DocumentNotFound do |msg|
-        render(json: { message: msg }, status: :bad_request)
+        render(json: { message: msg }, status: :not_found)
       end
 
       rescue_from CanCan::AccessDenied do |msg|
         render(json: { message: msg }, status: :forbidden)
+      end
+
+      rescue_from URI::InvalidURIError do |msg|
+        render(json: { message: msg }, status: :bad_request)
       end
     end
   end

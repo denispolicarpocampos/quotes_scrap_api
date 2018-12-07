@@ -1,6 +1,6 @@
 module Api
   module V1
-    class CrawlersService
+    class CrawlerService
       def initialize(tag)
         @tag = tag
         @url = 'http://quotes.toscrape.com'
