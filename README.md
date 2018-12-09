@@ -27,7 +27,6 @@ Solução:
   }
   
  - Depois de criar o usuário é necessário obter o token de acesso através de (/api/v1/user_token). Para isso enviamos o body:
-
   {
     "auth": {
       "email": "denispolicarpocampos@gmail.com",
